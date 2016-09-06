@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="sample">
+<head>
+<meta charset="UTF-8">
+<title>ストライプテーブル</title>
+<script type="application/javascript" src="../angular/angular.js"></script>
+<script type="application/javascript" src="main.js" ></script>
+<link rel="stylesheet" type="text/css" href="base.css" />
+</head>
+<body ng-controller="IndexController">
+<table>
+	<tr>
+		<th>No.</th>
+		<th>Name</th>
+		<th>Birthday</th>
+		<th>Phone</th>
+		<th>Mail</th>
+	</tr>
+	<tr ng-repeat="data in dataList" ng-class="{odd:$odd,even:$even,highlight:selected}" ng-mouseover="selected=true" ng-mouseleave="selected=false">
+		<td ng-class="{highlight:selectedCol==1}" ng-mouseover="selectCol(1)" ng-mouseleave="selectCol(0)">{{$index+1}}</td>
+		<td ng-class="{highlight:selectedCol==2}" ng-mouseover="selectCol(2)" ng-mouseleave="selectCol(0)">{{data.name}}</td>
+		<td ng-class="{highlight:selectedCol==3}" ng-mouseover="selectCol(3)" ng-mouseleave="selectCol(0)">{{data.birthday}}</td>
+		<td ng-class="{highlight:selectedCol==4}" ng-mouseover="selectCol(4)" ng-mouseleave="selectCol(0)">{{data.phone}}</td>
+		<td ng-class="{highlight:selectedCol==5}" ng-mouseover="selectCol(5)" ng-mouseleave="selectCol(0)">{{data.mail}}</td>
+	</tr>
+</table>
+</body>
+</html>
