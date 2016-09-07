@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body {
+	background-color: #000000;
+}
+
+#container {
+	width: 1000px;
+	margin: 20px auto;
+}
+
+#navi {
+	width: 300px;
+	float: left;
+}
+
+#navi ul {
+	height: 460px;
+	list-style-type: none;
+}
+
+#navi ul li {
+	list-style-type: none;
+	width: 150px;
+	float: left;
+}
+
+#navi ul li img {
+	border: 3px solid white;
+}
+
+#main {
+	width: 650px;
+	float: left;
+}
+
+#main img {
+	border: 3px solid white;
+}

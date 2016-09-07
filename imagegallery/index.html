@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="sample">
+<head>
+<meta charset="UTF-8">
+<title>イメージギャラリー</title>
+<script type="application/javascript" src="../angular/angular.js"></script>
+<script type="application/javascript" src="main.js" ></script>
+<link rel="stylesheet" type="text/css" href="base.css" />
+</head>
+<body ng-controller="IndexController">
+<div id="container">
+	<div id="navi">
+		<ul>
+			<li>
+				<img src="img/photo1_thum.jpg" ng-click="changeMainImage('img/photo1.jpg')" alt="" />
+			</li>
+			<li>
+				<img src="img/photo2_thum.jpg" ng-click="changeMainImage('img/photo2.jpg')" alt="" />
+			</li>
+			<li>
+				<img src="img/photo3_thum.jpg" ng-click="changeMainImage('img/photo3.jpg')" alt="" />
+			</li>
+			<li>
+				<img src="img/photo4_thum.jpg" ng-click="changeMainImage('img/photo4.jpg')" alt="" />
+			</li>
+			<li>
+				<img src="img/photo5_thum.jpg" ng-click="changeMainImage('img/photo5.jpg')" alt="" />
+			</li>
+			<li>
+				<img src="img/photo6_thum.jpg" ng-click="changeMainImage('img/photo6.jpg')" alt="" />
+			</li>
+			<li>
+				<img src="img/photo7_thum.jpg" ng-click="changeMainImage('img/photo7.jpg')" alt="" />
+			</li>
+			<li>
+				<img src="img/photo8_thum.jpg" ng-click="changeMainImage('img/photo8.jpg')" alt="" />
+			</li>
+		</ul>
+	</div>
+	<div id="main">
+		<img ng-src="{{imgSrc}}" src="img/photo1.jpg" alt="" />
+	</div>
+</div>
+</body>
+</html>
