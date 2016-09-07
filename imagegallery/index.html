@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>イメージギャラリー</title>
 <script type="application/javascript" src="../angular/angular.js"></script>
+<script type="application/javascript" src="../angular/angular-animate.js"></script>
 <script type="application/javascript" src="main.js" ></script>
 <link rel="stylesheet" type="text/css" href="base.css" />
 </head>
@@ -38,7 +39,8 @@
 		</ul>
 	</div>
 	<div id="main">
-		<img ng-src="{{imgSrc}}" src="img/photo1.jpg" alt="" />
+		<img ng-src="{{imgSrc1}}" ng-hidden="sw" ng-show="!sw" src="img/photo1.jpg" alt="" />
+		<img ng-src="{{imgSrc2}}" ng-show="sw" ng-hidden="!sw" src="img/photo1.jpg" alt="" />
 	</div>
 </div>
 </body>

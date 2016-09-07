@@ -42,4 +42,32 @@ body {
 
 #main img {
 	border: 3px solid white;
+	position: absolute;
+}
+
+/*===== ここから追加(参考:http://kinsentansa.blogspot.jp/2014/03/angularjsngshownganimate.html) =====*/
+.ng-hide-remove {
+	-webkit-transition: all linear 1s;
+	-moz-transition: all linear 1s;
+	-o-transition: all linear 1s;
+	transition: all linear 1s;
+	display: block !important;
+	opacity: 0;
+}
+
+.ng-hide-remove.ng-hide-remove-active {
+	opacity: 1;
+}
+
+.ng-hide-add {
+	-webkit-transition: all linear 1s;
+	-moz-transition: all linear 1s;
+	-o-transition: all linear 1s;
+	transition: all linear 1s;
+	display: block !important;
+	opacity: 1;
+}
+
+.ng-hide-add.ng-hide-add-active {
+	opacity: 0;
 }
