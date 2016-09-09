@@ -6,8 +6,10 @@
 
 ## 目次
 
- - CSS3セレクターでストライプテーブル(stripetable)
- - スライド式イメージギャラリー(imagegallery)
+　リンク先はQiita
+
+ - [CSS3セレクターでストライプテーブル(stripetable)](http://qiita.com/perpouh/items/2c87097741b7bfb879a2)
+ - [スライド式イメージギャラリー(imagegallery)](http://qiita.com/perpouh/items/51b052e40478b13957a2)
  - なめらかアコーディオンパネル(accordionpanel)
  - ポータルサイト風タブパネル
  - 個性的な3種類のツールチップ
