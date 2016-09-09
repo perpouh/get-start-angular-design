@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+dl {
+	width: 800px;
+}
+
+dt {
+	line-height: 35px;
+	font-size: large;
+	text-indent: 3em;
+	font-weight: bold;
+	color: white;
+	height: 35px;
+	background-image: url("img/background.jpg");
+}
+
+dd {
+	margin: 0;
+	background: #d4d0c8;
+	overflow:hidden;
+}
+
+dd p {
+	margin: 0;
+	text-indent: 1em;
+	padding: 20px;
+}
