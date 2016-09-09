@@ -17,11 +17,20 @@ dt {
 dd {
 	margin: 0;
 	background: #d4d0c8;
-	overflow:hidden;
+	overflow: hidden;
+	max-height: 0em;
+	transition: 1s linear;
+	-webkit-transition: linear 1s;
+	-moz-transition: linear 1s;
+	-o-transition: linear 1s;
 }
 
 dd p {
 	margin: 0;
 	text-indent: 1em;
 	padding: 20px;
+}
+ 
+.ng-hide-remove {
+	max-height: 50em;
 }

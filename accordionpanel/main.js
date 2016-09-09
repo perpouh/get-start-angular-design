@@ -1,4 +1,4 @@
-angular.module('sample', []).controller('IndexController',
+angular.module('sample', ['ngAnimate']).controller('IndexController',
 		[ '$scope', function($scope) {
 			
 		} ]);
