@@ -11,32 +11,83 @@
 <body ng-controller="IndexController">
 <div id="container">
 	<div id="navi">
-		<ul>
-			<li>
-				<img src="img/photo1_thum.jpg" ng-click="changeMainImage('img/photo1.jpg')" alt="" />
-			</li>
-			<li>
-				<img src="img/photo2_thum.jpg" ng-click="changeMainImage('img/photo2.jpg')" alt="" />
-			</li>
-			<li>
-				<img src="img/photo3_thum.jpg" ng-click="changeMainImage('img/photo3.jpg')" alt="" />
-			</li>
-			<li>
-				<img src="img/photo4_thum.jpg" ng-click="changeMainImage('img/photo4.jpg')" alt="" />
-			</li>
-			<li>
-				<img src="img/photo5_thum.jpg" ng-click="changeMainImage('img/photo5.jpg')" alt="" />
-			</li>
-			<li>
-				<img src="img/photo6_thum.jpg" ng-click="changeMainImage('img/photo6.jpg')" alt="" />
-			</li>
-			<li>
-				<img src="img/photo7_thum.jpg" ng-click="changeMainImage('img/photo7.jpg')" alt="" />
-			</li>
-			<li>
-				<img src="img/photo8_thum.jpg" ng-click="changeMainImage('img/photo8.jpg')" alt="" />
-			</li>
-		</ul>
+		<div class="pageWrap" ng-style="myStyle">
+			<div class="page">
+				<ul>
+					<li>
+						<img src="img/photo1_thum.jpg" ng-click="changeMainImage('img/photo1.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo2_thum.jpg" ng-click="changeMainImage('img/photo2.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo3_thum.jpg" ng-click="changeMainImage('img/photo3.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo4_thum.jpg" ng-click="changeMainImage('img/photo4.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo5_thum.jpg" ng-click="changeMainImage('img/photo5.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo6_thum.jpg" ng-click="changeMainImage('img/photo6.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo7_thum.jpg" ng-click="changeMainImage('img/photo7.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo8_thum.jpg" ng-click="changeMainImage('img/photo8.jpg')" alt="" />
+					</li>
+				</ul>
+				<p><img src="img/btn_next.jpg" alt="次へ" class="next" ng-click="next()" /></p>
+			</div>
+			<div class="page">
+				<ul>
+					<li>
+						<img src="img/photo9_thum.jpg" ng-click="changeMainImage('img/photo9.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo10_thum.jpg" ng-click="changeMainImage('img/photo10.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo11_thum.jpg" ng-click="changeMainImage('img/photo11.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo12_thum.jpg" ng-click="changeMainImage('img/photo12.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo13_thum.jpg" ng-click="changeMainImage('img/photo13.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo14_thum.jpg" ng-click="changeMainImage('img/photo14.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo15_thum.jpg" ng-click="changeMainImage('img/photo15.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo16_thum.jpg" ng-click="changeMainImage('img/photo16.jpg')" alt="" />
+					</li>
+				</ul>
+				<p>
+					<img src="img/btn_prev.jpg" alt="前へ" class="prev" ng-click="prev()" />
+					<img src="img/btn_next.jpg" alt="次へ" class="next" ng-click="next()" />
+				</p>
+			</div>
+			<div class="page">
+				<ul>
+					<li>
+						<img src="img/photo17_thum.jpg" ng-click="changeMainImage('img/photo17.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo18_thum.jpg" ng-click="changeMainImage('img/photo18.jpg')" alt="" />
+					</li>
+					<li>
+						<img src="img/photo19_thum.jpg" ng-click="changeMainImage('img/photo19.jpg')" alt="" />
+					</li>
+				</ul>
+				<p><img src="img/btn_prev.jpg" alt="前へ" class="prev" ng-click="prev()" /></p>
+			</div>
+		</div>
 	</div>
 	<div id="main">
 		<img ng-src="{{imgSrc1}}" ng-hidden="sw" ng-show="!sw" src="img/photo1.jpg" alt="" />
