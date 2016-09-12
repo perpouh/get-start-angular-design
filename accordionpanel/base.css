@@ -14,6 +14,14 @@ dt {
 	background-image: url("img/background.jpg");
 }
 
+dt.selected{
+	background-image: url("img/background_selected.jpg");
+}
+
+dt:not(.selected):hover{
+	background-image: url("img/background-over.jpg");
+}
+
 dd {
 	margin: 0;
 	background: #d4d0c8;
