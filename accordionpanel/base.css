@@ -18,12 +18,20 @@ dd {
 	margin: 0;
 	background: #d4d0c8;
 	overflow: hidden;
-	max-height: 50em;
 	transition: 1s linear;
 	-webkit-transition: linear 1s;
 	-moz-transition: linear 1s;
 	-o-transition: linear 1s;
 }
+
+dd:not(.ng-hide){
+	max-height: 50em;
+}
+
+dd.ng-hide{
+	max-height: 0em;
+}
+
 
 dd p {
 	margin: 0;
@@ -33,4 +41,8 @@ dd p {
  
 .ng-hide-remove {
 	max-height: 0em;
+}
+
+.ng-hide-add{
+	max-height:50em;
 }
