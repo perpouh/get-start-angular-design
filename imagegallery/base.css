@@ -47,10 +47,21 @@ body {
 #navi .pageWrap .page {
 	overflow:hidden;
 	float: left;
+	width:300px;
+}
+
+#navi .pageWrap .wrapper{
+	overflow:hidden;
 	transition: 1s linear;
 	-webkit-transition: linear 1s;
 	-moz-transition: linear 1s;
 	-o-transition: linear 1s;
+}
+
+#navi .pageWrap .wrapper:after{
+	clear:both;
+	display:block;
+	content="";
 }
 
 #navi p {
@@ -101,18 +112,18 @@ body {
 	opacity: 0;
 }
 
-.page:not(.ng-hide){
+.wrapper:not(.ng-hide){
 	width: 300px;
 }
 
-.page.ng-hide{
+.wrapper.ng-hide{
 	width: 0px;
 }
 
-.page.ng-hide-remove {
+.wrapper.ng-hide-remove {
 	width: 0px;
 }
 
-.page.ng-hide-add {
+.wrapper.ng-hide-add {
 	width:300px;
 }
