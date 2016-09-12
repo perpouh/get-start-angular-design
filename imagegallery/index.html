@@ -12,7 +12,7 @@
 <div id="container">
 	<div id="navi">
 		<div class="pageWrap" ng-style="myStyle">
-			<div class="page">
+			<div class="page" ng-hide="page!=1">
 				<ul>
 					<li>
 						<img src="img/photo1_thum.jpg" ng-click="changeMainImage('img/photo1.jpg')" alt="" />
@@ -41,7 +41,7 @@
 				</ul>
 				<p><img src="img/btn_next.jpg" alt="次へ" class="next" ng-click="next()" /></p>
 			</div>
-			<div class="page">
+			<div class="page" ng-hide="page!=2">
 				<ul>
 					<li>
 						<img src="img/photo9_thum.jpg" ng-click="changeMainImage('img/photo9.jpg')" alt="" />
@@ -73,7 +73,7 @@
 					<img src="img/btn_next.jpg" alt="次へ" class="next" ng-click="next()" />
 				</p>
 			</div>
-			<div class="page">
+			<div class="page" ng-hide="page!=3">
 				<ul>
 					<li>
 						<img src="img/photo17_thum.jpg" ng-click="changeMainImage('img/photo17.jpg')" alt="" />
