@@ -51,6 +51,7 @@ body {
 }
 
 #navi .pageWrap .wrapper{
+	float:left;
 	overflow:hidden;
 	transition: 1s linear;
 	-webkit-transition: linear 1s;
@@ -121,9 +122,5 @@ body {
 }
 
 .wrapper.ng-hide-remove {
-	width: 0px;
-}
-
-.wrapper.ng-hide-add {
-	width:300px;
+	width: 300px;
 }
