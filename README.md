@@ -11,7 +11,7 @@
  - [CSS3セレクターでストライプテーブル(stripetable)](http://qiita.com/perpouh/items/2c87097741b7bfb879a2)
  - [スライド式イメージギャラリー(imagegallery)](http://qiita.com/perpouh/items/51b052e40478b13957a2)
  - [なめらかアコーディオンパネル(accordionpanel)](http://qiita.com/perpouh/items/a6347f0e227bf16a2705)
- - ポータルサイト風タブパネル
+ - [ポータルサイト風タブパネル(tabpanel)](http://qiita.com/perpouh/items/96488398a7c4bd790b9e)
  - 個性的な3種類のツールチップ
  - ロールオーバー付きナビゲーションバー
  - 多階層対応ドロップダウンメニュー
