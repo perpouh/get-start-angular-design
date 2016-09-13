@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #fafafa;
+	color: #333333;
+	padding: 10px 80px;
+}
+
+#container {
+	margin-left: 10px;
+}
+
+p.text {
+	text-indent: 1em;
+	position:relative;
+}
+
+.tooltip {
+	padding: 10px;
+	text-indent: 0;
+	opacity: 0.9;
+	position: absolute;
+	border: 2px solid orange;
+	border-radius: 4px;
+	font-size: small;
+	opacity: 0.9;
+	background-color: white;
+	text-indent: 0;
+}
