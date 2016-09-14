@@ -10,12 +10,12 @@
 <body ng-controller="IndexController">
 	<div class="header">
 		<ul class="menu">
-			<li ng-mouseover="openMenu(1)" ng-mouseleave="closeMenu()">メニューA
-				<ul class="sub" ng-show="menu==1">
+			<li ng-mouseover="openA=true" ng-mouseleave="openA=false">メニューA
+				<ul class="sub" ng-show="openA">
 					<li>サブメニューA</li>
 					<li>サブメニューA</li>
-					<li>サブメニューA
-						<ul class="sub" ng-show="menu==1">
+					<li ng-mouseover="openASub=true" ng-mouseleave="openASub=false">サブメニューA
+						<ul class="sub" ng-show="openASub">
 							<li>サブメニューA</li>
 							<li>サブメニューA</li>
 							<li>サブメニューA</li>
@@ -23,15 +23,15 @@
 					</li>
 				</ul>
 			</li>
-			<li ng-mouseover="openMenu(2)" ng-mouseleave="closeMenu()">メニューB
-				<ul class="sub" ng-show="menu==2">
+			<li ng-mouseover="openB=true" ng-mouseleave="openB=false">メニューB
+				<ul class="sub" ng-show="openB">
 					<li>サブメニューB</li>
 					<li>サブメニューB</li>
 					<li>サブメニューB</li>
 				</ul>
 			</li>
-			<li ng-mouseover="openMenu(3)" ng-mouseleave="closeMenu()">メニューC
-				<ul class="sub" ng-show="menu==3">
+			<li ng-mouseover="openC=true" ng-mouseleave="openC=false">メニューC
+				<ul class="sub" ng-show="openC">
 					<li>サブメニューC</li>
 					<li>サブメニューC</li>
 					<li>サブメニューC</li>
