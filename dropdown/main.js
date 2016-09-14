@@ -4,6 +4,6 @@ angular.module('sample', []).controller('IndexController',
 				$scope.menu=num;
 			}
 			$scope.closeMenu=function(){
-				$scope.num=0;
+				$scope.menu=0;
 			}
 		} ]);
