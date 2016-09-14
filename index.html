@@ -2,15 +2,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Web政策の現場で使うAngularJSデザイン入門</title>
+<title>Web制作の現場で使うAngularJSデザイン入門</title>
 <style type="text/css">
 body{
-	padding: 10px 80px;
+	margin:0;
+	padding: 0px 80px;
+}
+#header{
+	background-image:url("header.jpg");
+	background-size: cover;
+	height:300px;
 }
 </style>
 </head>
 <body>
-<h1>Web制作の現場で使うAngularJSデザイン入門</h1>
+<div id="header"></div>
 <p>　パクリじゃないですオマージュです。もしくはカバーです。<br>
 　かの有名なドーナツ本（<a href="https://www.amazon.co.jp/dp/4048913913/" rel="nofollow" target="_blank">Web制作の現場で使うjQueryデザイン入門</a>）をAngularJSでコピーしていこうプロジェクトのサンプル集です。<br />
 　指摘・ツッコミはQiitaコメントまでお寄せいただければ幸甚</p>
@@ -32,8 +38,9 @@ body{
 <li>
 	ポータルサイト風タブパネル<br />
 	<a href="http://qiita.com/perpouh/items/96488398a7c4bd790b9e" id="reference-3010d5b6234cbe7a0eaa">解説</a> / <a href="tabpanel/index.html">サンプル</a></li>
-<li>個性的な3種類のツールチップ</li>
-<li>ロールオーバー付きナビゲーションバー</li>
+<li>個性的な3種類のツールチップ<br />
+	<a href="http://qiita.com/perpouh/items/7c3da774685f758f4295">解説</a> / <a href="tooltip/index.html">サンプル</a></li>
+<li><span style="text-decoration: line-through;">ロールオーバー付きナビゲーションバー</span> これ:hover擬似要素で十分なので飛ばします</li>
 <li>多階層対応ドロップダウンメニュー</li>
 <li>Lightbox風モーダルウィンドウ</li>
 <li>ドラッグ＆ドロップで動くフローティングウィンドウ</li>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="sample">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="application/javascript" src="../angular/angular.js"></script>
+<script type="application/javascript" src="main.js" ></script>
+<link rel="stylesheet" type="text/css" href="base.css" />
+</head>
+<body ng-controller="IndexController">
+<div class="header">
+	<ul class="menu">
+		<li ng-mouseover="openMenu(1)" ng-mouseleave="closeMenu()">メニューA
+			<ul class="sub" ng-show="menu==1">
+				<li>サブメニューA</li>
+				<li>サブメニューA</li>
+				<li>サブメニューA</li>
+			</ul>
+		</li>
+		<li ng-mouseover="openMenu(2)" ng-mouseleave="closeMenu()">メニューB
+			<ul class="sub" ng-show="menu==2">
+				<li>サブメニューB</li>
+				<li>サブメニューB</li>
+				<li>サブメニューB</li>
+			</ul>
+		</li>
+		<li ng-mouseover="openMenu(3)" ng-mouseleave="closeMenu()">メニューC
+			<ul class="sub" ng-show="menu==3">
+				<li>サブメニューC</li>
+				<li>サブメニューC</li>
+				<li>サブメニューC</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
